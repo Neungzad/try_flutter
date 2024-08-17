@@ -3,6 +3,7 @@
 A new Flutter project. this branch is create for learning flutter and dart. by following the tutorial from [Mitch Koko](https://youtu.be/TclK5gNM_PM?si=UaPq1Ie5lgcQUtGK)
 
 ## Lesson 1 - TO DO APP
+branch: [todo-app](https://github.com/Neungzad/try_flutter/tree/todo-app)
 
 this is a simple to do app that allows you to add tasks and delete them.
 
