@@ -1,16 +1,66 @@
-# try_flutter
+# Try_flutter
 
-A new Flutter project.
+A new Flutter project. this branch is create for learning flutter and dart. by following the tutorial from [Mitch Koko](https://youtu.be/TclK5gNM_PM?si=UaPq1Ie5lgcQUtGK)
 
-## Getting Started
+## Lesson 1 - TO DO APP
 
-This project is a starting point for a Flutter application.
+this is a simple to do app that allows you to add tasks and delete them.
 
-A few resources to get you started if this is your first Flutter project:
+![App Screenshot](./doc/to-do-app.gif)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## What I learned
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Interactive
+    - GestureDetector
+- Layout
+    - MaterialApp
+        - theme
+        - home
+    - Scaffold
+        - ListView
+        - Stack
+        - Grid
+        - Row
+        - Column
+            - Expend
+                - Flex
+            - mainAxisAlignment
+            - crossAxisAlignment
+- Navigation
+    - Drawer
+    - BottomNavigatorBar
+    - Declare structure
+        - MaterialApp.Routes - declare
+        - Navigator.pushNamed
+- State
+    - Stateless
+        - Constructor as props
+            - VoidCallback
+            - Function(bool?)? onPressed
+    -  Stateful
+- Form
+    - TextField
+- Controller
+	- .text
+	- .clear()
+- Modal
+    - showDialog()
+        - DialogBox()
+            - Navigator.pop(context)
+- ThemeData
+    - ColorScheme.fromSeed
+        - seedColor
+        - brightness
+        - primary
+- Local Storage
+    - pubspec
+        - dev_dependencies
+            - build_runner
+            - hive_generator
+        - dependencies
+            - hive
+            - hive_flutter
+    - Hive.openBox('todoBox')
+        - Hive.box(‘todoBox’)
+            - get()
+            - put()
