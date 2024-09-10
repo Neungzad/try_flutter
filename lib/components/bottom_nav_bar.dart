@@ -22,11 +22,13 @@ class BottomNavBar extends StatelessWidget {
             icon: Icons.home,
             text: 'Shop',
             gap: 4, // Add margin between icon and text
+            margin: EdgeInsets.only(right: 8),
           ),
           GButton(
             icon: Icons.shop,
             text: 'Cart',
             gap: 4, // Add margin between icon and text
+            margin: EdgeInsets.only(left: 8),
           ),
         ],
         onTabChange: (index) => onTabChange(index),
