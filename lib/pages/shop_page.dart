@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:try_flutter/components/shoe_tile.dart';
+import 'package:try_flutter/models/shoe_tile.dart';
 
 class ShopPage extends StatefulWidget {
   const ShopPage({super.key});
@@ -76,9 +77,18 @@ class _ShopPageState extends State<ShopPage> {
           ),
         ),
         Expanded(
-          child: ListView.builder(itemBuilder: (context, index) {
-            return const ShoeTile();
-          }),
+          child: ListView.builder(
+              itemCount: 4,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                Shoe shoe = Shoe(
+                    name: 'Nike Air Max 90',
+                    price: 150,
+                    imagePath: 'lib/images/product02.png',
+                    description:
+                        'The Nike Air Max 90 stays true to its OG roots with its iconic Waffle outsole.');
+                return ShoeTile(shoe: shoe);
+              }),
         )
       ],
     );
