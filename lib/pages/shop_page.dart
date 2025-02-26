@@ -84,7 +84,7 @@ class _ShopPageState extends State<ShopPage> {
                 Shoe shoe = Shoe(
                     name: 'Nike Air Max 90',
                     price: 150,
-                    imagePath: 'lib/images/product02.png',
+                    imagePath: 'lib/images/product03.jpg',
                     description:
                         'The Nike Air Max 90 stays true to its OG roots with its iconic Waffle outsole.');
                 return ShoeTile(shoe: shoe);
